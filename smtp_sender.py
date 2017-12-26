@@ -2,6 +2,8 @@ import smtplib
 import argparse
 import sys
 
+__author__ = 'itymoshenko'
+
 parser = argparse.ArgumentParser(description='SMTP sender parser')
 parser.add_argument('-d', '--dest', help='Input phone number', required=True)
 arg = parser.parse_args(sys.argv[1:])
@@ -10,7 +12,7 @@ number = int(arg.dest)
 sender = 'test@test.ua'
 receiver = ''.format(number)
 message = "This is a test message. Please ignore it."
-subject = "DR" #"DR DR" for receiving reporta
+subject = "Message" 
 
 msg = """From: %s
 To: %s
