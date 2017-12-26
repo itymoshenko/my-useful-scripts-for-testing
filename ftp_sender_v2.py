@@ -1,5 +1,7 @@
 import ftplib
 
+__author__ = 'itymoshenko'
+
 # Create connection via FTP
 server = 'localhost'
 username = ''
@@ -14,7 +16,7 @@ remote_path = "in/"
 ftp_connection.cwd(remote_path)
 
 ftp_test = "/root/scripts/test_ftp.txt"
-number_list = ['380632107529', '380938123174', '380632107496', '380961887126']
+number_list = ['38063210xxxx', '38093xxxxxxx', '38063210xxxx', '38096xxxxxxx']
 
 
 def create_message(*arg):
