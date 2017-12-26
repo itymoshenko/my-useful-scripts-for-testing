@@ -1,5 +1,7 @@
 import ftplib
 
+__author__ = 'itymoshenko'
+
 # Create connection via FTP
 server = 'localhost'
 username = ''
@@ -28,7 +30,7 @@ while count < 10:
     count = count + 1
     int_id = "0{0}".format(count)
     oa = "Test"
-    da = "380632107529"
+    da = "38063210xxxx"
     message = "Test message {0} via FTP. Please ignore it!".format(count)
     data = "{0};{1};{2};{3}".format(int_id, oa, da, message)
     update_file(data)
