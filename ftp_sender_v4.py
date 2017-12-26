@@ -3,6 +3,8 @@ import random
 import argparse
 import sys
 
+__author__ = 'itymoshenko'
+
 parser = argparse.ArgumentParser(description='FTP sender parser')
 parser.add_argument('-c', '--count', help='Please specify count of files that will be creating.', required=True)
 arg = parser.parse_args(sys.argv[1:])
